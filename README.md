@@ -11,7 +11,7 @@ For instance,
 
 Although both of the method are very convenient in model connection, it cannot work functionally in tensorflow_model_optimization if we try to add quantization awareness node inside the model. Therefore, I set a easy sample code to dig the both way to solve the problem. 
 
-## Envirnment 
+## Environment
 ```
 python3.8
 tensorflow==2.4.0
