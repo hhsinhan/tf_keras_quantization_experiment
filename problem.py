@@ -114,6 +114,7 @@ decoder_sequential.add(tf.keras.layers.Conv2DTranspose(16, 3, activation="relu")
 decoder_sequential.add(tf.keras.layers.Conv2DTranspose(32, 3, activation="relu"))
 decoder_sequential.add(tf.keras.layers.UpSampling2D(3))
 decoder_sequential.add(tf.keras.layers.Conv2DTranspose(16, 3, activation="relu"))
+decoder_sequential.add(tf.keras.layers.Conv2DTranspose(1, 3, activation="relu"))
 
 autoencoder3 = tf.keras.Model(encoder_input, decoder_sequential(encoder_output), name="autoencoder3")
 autoencoder3.summary()
